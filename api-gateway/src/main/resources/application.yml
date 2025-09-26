@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: conta_route
+              uri: http://localhost:8081
+              predicates:
+                - Path=/contas/**
+
+            - id: transacao_route
+              uri: http://localhost:8082
+              predicates:
+                - Path=/transacoes/**
+
+            - id: notificacao_route
+              uri: http://localhost:8083
+              predicates:
+                - Path=/transacoes-search/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always
