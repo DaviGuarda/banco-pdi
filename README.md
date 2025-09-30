@@ -125,7 +125,7 @@ Todas as requisições devem ser feitas para o **API Gateway**: `http://localhos
 
 Para facilitar os testes, você pode baixar a collection completa da API e o arquivo de ambiente do Postman no link abaixo.
 
-* **[🔗 Baixar Arquivos do Postman (Collection + Environment)](https://SEU_LINK_AQUI)**
+* **[🔗 Baixar Arquivos do Postman (Collection + Environment)](https://drive.google.com/drive/folders/10QGD9_cyRip6ufS0HmKyoueP61tx6Vlk?usp=sharing)**
 
 ---
 ### 🔎 Como o Elasticsearch foi Utilizado
